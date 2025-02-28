@@ -239,13 +239,6 @@ export default function PokemonDetail() {
             ))}
           </div>
           
-          {pokemon.moves.length > 12 && (
-            <div className="text-center mt-4">
-              <button className="text-blue-500 hover:text-blue-700 font-medium transition">
-                Show More Moves
-              </button>
-            </div>
-          )}
         </div>
         
         {/* Back Button - Bottom */}

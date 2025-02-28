@@ -20,7 +20,7 @@ export default function Home() {
     const fetchAllPokemons = async () => {
       setLoading(true);
       try {
-        const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=1304"); // Fetch all Pokémon
+        const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=1200"); // Fetch all Pokémon
         const data = await res.json();
         setAllPokemons(data.results);
         setFilteredPokemons(data.results); // Initially, filteredPokemons = allPokemons
